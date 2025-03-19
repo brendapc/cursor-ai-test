@@ -19,9 +19,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
 }
 
 .App-link {
@@ -35,4 +36,84 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.components-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.todo-list {
+  background-color: #1a1d23;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.todo-list h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.todo-list form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.todo-list input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.todo-list button {
+  padding: 0.5rem 1rem;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  color: #282c34;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.todo-list button:hover {
+  background-color: #4fa8c7;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #2c313c;
+  border-radius: 4px;
+}
+
+.todo-list li span {
+  flex: 1;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.todo-list li button {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.todo-list li button:hover {
+  background-color: #ff5252;
 }
